@@ -25,6 +25,7 @@ public class App {
                 System.out.print("Pilih menu (1-4): ");
                 int mainChoice = scanner.nextInt();
                 scanner.nextLine(); // Consume newline
+                // scanner.nextLine(); // Consume newline
                 switch (mainChoice) {
                     case 1:
                         System.out.println("1. Tambah Mahasiswa");
