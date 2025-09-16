@@ -36,8 +36,8 @@ public class MahasiswaRepository {
     public static Jurusan getJurusanByKode(String kode) {
         String sql = "SELECT kode, nama FROM jurusan WHERE kode = ?";
         try {
-            PreparedStatement preparedStatement = conn.prepareStatement("kode");
-            preparedStatement.setString(1, "kode");
+            PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1, sql);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 return new Jurusan(resultSet.getString("kode"), resultSet.getString("nama"));

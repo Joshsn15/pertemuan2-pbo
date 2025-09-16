@@ -1,5 +1,4 @@
 package pbo.models;
-import java.util.ArrayList;
 public class Jurusan {
     public String kode;
     String nama;
